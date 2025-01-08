@@ -30,4 +30,44 @@ def salvarNumSeries():
         
     print("Números de série salvos com sucesso!")
 
-salvarNumSeries()
+def menu():
+    while True:    
+        stringLinha()
+        print()
+        print("  ██╗      ██████╗  ██████╗  █████╗ ")
+        print("  ██║     ██╔═══██╗██╔════╝ ██╔══██╗")
+        print("  ██║     ██║   ██║██║  ███╗███████║")
+        print("  ██║     ██║   ██║██║   ██║██╔══██║")
+        print("  ███████╗╚██████╔╝╚██████╔╝██║  ██║")
+        print("  ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝")
+        print("      Automatizador TOTVS v1.9.4")
+        print("         © 2024 Pierry Jonny")
+        print()
+        print("Menu:")
+        print("1. Endereçamento")
+        print("2. Transferência Múltipla")
+        print("3. Solicitar")
+        print("4. Baixar Pré-Requisitos")
+        print("5. Salvar Nº Série")
+        print("6. Listar Nº Série")
+        print("0. Sair")
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "1":
+            enderacamento()
+        elif opcao == "2":
+            transferenciaMultipla()
+        elif opcao == "3":
+            solicitar()
+        elif opcao == "4":
+            baixar()
+        elif opcao == "5":
+            salvarNumSeries()
+        elif opcao == "6":
+            listarNumSerie()
+        elif opcao == "0":
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
+            
+menu()
