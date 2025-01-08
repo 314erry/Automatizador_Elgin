@@ -1,4 +1,5 @@
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+import os
+
 NUMEROS_SERIES_PATH = os.path.join(BASE_DIR, "numeros.txt")
 
 def stringLinha():
