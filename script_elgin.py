@@ -2,12 +2,12 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 NUMEROS_SERIES_PATH = os.path.join(BASE_DIR, "numeros.txt")
+ETIQUETAS_PATH = os.path.join(BASE_DIR, "Gerar Etiquetas.bat")
 
 def stringLinha():
     print('-' * 40)
 
 def salvarNumSeries():
-    stringLinha()
     print("Digite os novos números de série para salvar:")
     print("(Apenas 1 nº de série por linha e pressione Enter duas vezes para finalizar):")
 
@@ -31,3 +31,5 @@ def salvarNumSeries():
     print("Números de série salvos com sucesso!")
 
 salvarNumSeries()
+
+os.startfile(ETIQUETAS_PATH)
