@@ -27,3 +27,5 @@ def salvarNumSeries():
         print("Erro:", e)
         
     print("Números de série salvos com sucesso!")
+
+salvarNumSeries()
